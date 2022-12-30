@@ -7,23 +7,72 @@
   </head>
 
   <body>
-    <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
 
-    <!--
+      <header>
+        <h1 id="title">Encuesta de prueba</h1>
+        <p id="description">Por favor coloque aquí sus datos, nos comunicaremos con usted a la brevedad posible.</p>
+      </header>
+        <form action="" id="survey-form">
+          <div>
+            <label id="name-label">Nombre</label>
+            <input type="text" id="name" name="name" placeholder="Ingrese su nombre aquí" required="">
+          </div>
 
-    Hello Camper!
+          <div>
+            <label id="email-label">Correo electrónico</label>
+            <input type="email" id="email" placeholder="micorreo@dominio.com" required="">
+          </div>
 
-    For now, the test suite only works in Chrome!
-    Please read the README below in the JS Editor before beginning.
-    Feel free to delete this message once you have read it.
-    Good luck and Happy Coding!
+          <div>
+            <label id="number-label">Edad</label>
+            <input type="number" id="number" placeholder="Ingrese su edad aquí" required="" min="18" max="100">
+          </div>
 
-    - The freeCodeCamp Team
+          <div>
+            <fieldset>
+              <legend>¿Recomendarias este servicio a alguien más?</legend>
+              <div>
+                <input type="radio" id="si" name="recomendacion" value="si">
+                <label for="si">Si, lo recomendaria.</label>
+              </div>
+              <div>
+                <input type="radio" id="probable" name="recomendacion" value="probable">
+                <label for="probable">Probablemente lo haría.</label>
+              </div>
+              <div>
+                <input type="radio" id="no" name="recomendacion" value="no">
+                <label for="no">No los recomendaría.</label>
+              </div>
+            </fieldset>
+             
+          </div>
 
-    -->
-    <p> Hello World! Ruth and Yidam</p>
+          <div>
+            <span>Seleccione su tipo de servicio</span>
+            <label><input name="servicio" value="tecnico" type="checkbox" class="input-checkbox">Servicio técnico</label>
+            <label><input name="servicio" value="asesoria" type="checkbox" class="input-checkbox">Asesorías</label>
+            <label><input name="servicio" value="instalacion" type="checkbox" class="input-checkbox">Instalación</label>
+            <label><input name="servicio" value="otro" type="checkbox" class="input-checkbox">Otros</label>
+          </div>
 
-    <p>Hello World, we are software developers!</p>
+          <div>
+            <span>¿Algo que quiera agregar?</span>
+            <textarea id="comentarios" name="comentarios" rows="4" cols="50"></textarea>
+          </div>
+
+          <div>
+            <button type="submit" id="submit">Enviar formulario</button>
+          </div>
+
+
+        </form>
+
+      
+
+
+
+
+    <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>   
 
     <script  src="js/index.js"></script>
   </body>
