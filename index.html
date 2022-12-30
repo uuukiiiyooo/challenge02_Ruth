@@ -7,24 +7,35 @@
   </head>
 
   <body>
+
+    <h1 id="title">Ruth - Yidam Survey Form</h1>
+    
+    <p id="description">Please take a second to fill the form so you can join our trial.</p>
+
+    <form id="survey-form">
+      <label for="fName" id="name-label">First Name</label>
+      <input required type="text" id="name" name="fName" placeholder="Your name goes here">
+
+      <label for="email" id="email-label">E-Mail</label>
+      <input required type="email" id="email" placeholder="Now you can write your e-mail here">
+
+      <label for="fNumber" id="number-label">Favorite Number</label>
+      <input type="number" id="number" min="1" max="5" placeholder="And your favorite number for luck!">
+
+      <label for="dropdown">If you were a song, wich genre you'd like to choose?</label>
+      <select id="dropdown" name="songs">
+        <option value="rock">Rock</option>
+        <option value="pop">Pop</option>
+        <option value="classic">Classic</option>
+        <option value="jazz">Jazz</option>
+        <option value="regueton">Regueton</option>
+      </select>
+
+      
+
+    </form>
+
     <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
-
-    <!--
-
-    Hello Camper!
-
-    For now, the test suite only works in Chrome!
-    Please read the README below in the JS Editor before beginning.
-    Feel free to delete this message once you have read it.
-    Good luck and Happy Coding!
-
-    - The freeCodeCamp Team
-
-    -->
-    <p> Hello World! Ruth</p>
-
-    <p>Hello World, we are software developers!</p>
-
     <script  src="js/index.js"></script>
   </body>
 </html>
