@@ -1,0 +1,27 @@
+form {
+    background: rgba(22,22,29, .8);
+    color: #fff;
+    border-radius: 25px;
+    font-family:"Calibri";
+    padding: 3% 5%;
+}
+
+.form-item {
+    padding: 1%;
+}
+
+header {
+    text-align : center;
+}
+
+label {
+    display: flex;
+}
+
+body {
+    background-color : #006600;
+    font-family : Calibri;
+    font-size: 1.25rem;
+    color : White;
+    padding: 1%;
+}
